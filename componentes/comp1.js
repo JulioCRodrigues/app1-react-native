@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet,Text, View} from 'react-native';
 
-export default function(){
+export default function(props){
     return(
         
         <View>
-            <Text style={estilos.txt2}>Julio César Rodrigues</Text>
+            <Text style={estilos.txt2}>JC Cursos - Curso de {props.curso} </Text>
         </View>
     )
 }
