@@ -2,6 +2,7 @@
 import React from 'react';
 import {StyleSheet, View,Text} from 'react-native';
 import C1 from './componentes/comp1'
+import Estilos from './estilos/estilos'
 
 
 /*
@@ -20,28 +21,12 @@ export default class App1 extends Component{
 */
 export default function app1() {
   return(
-    <View style={estilo.conteiner}>
+    <View style={Estilos.conteiner}>
       <C1 curso="React Native"/>
       <C1 curso="Java"/>
       <C1 curso="Python"/>
       <C1 curso="Dart"/>
-      <Text style={estilo.txt0}> Bounacera</Text>
+      <Text style={Estilos.textoTitulo}> Julio Rodrigues - Cursos</Text>
     </View>
   );
 };
-
-
-const estilo = StyleSheet.create({
-
-    conteiner:{
-      backgroundColor: '#ddd',
-      flex: 1,
-      alignItems: 'center',
-      justifyContent: 'center'
-    },
-
-    txt0:{
-      color: '#080',
-      fontSize: 10,
-    }
-});
