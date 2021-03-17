@@ -4,13 +4,7 @@ import {StyleSheet, View,Text, Image, Button, Alert} from 'react-native';
 import Caixa from './componentes/caixas'
 import Estilos from './estilos/estilos'
 
-const dobro = n =>{
-  return n * 2;
-}
 
-const soma = (n1, n2) =>{
-  return n1 + n2;
-}
 
 
 const fexibir = (vp1) =>{
@@ -24,8 +18,10 @@ const fexibir = (vp1) =>{
 export default function app1() {
   return(
     <View style={Estilos.conteiner}>
-      <Text>{dobro(6)}</Text>
-      <Text>{soma(5,5)}</Text>
+      <Button
+        title="Mostrar mensagem"
+        onPress={() => Alert.alert('Mensagem:','Curso de React Native')}
+              />
         <Image
           style={estilos.logo}
           source={require('./assets/logocanal.png')}
