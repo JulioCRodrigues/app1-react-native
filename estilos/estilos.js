@@ -6,7 +6,8 @@ export default StyleSheet.create({
         flex: 1,
         backgroundColor: '#FFF',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        marginTop: 20,
     },
 
     textoCursos:{
@@ -15,9 +16,14 @@ export default StyleSheet.create({
 
     },
 
+    textoPadrao:{
+        color: '#fff',
+        fontSize: 20,
+    },
+
     textoTitulo:{
         color: '#F00',
         fontSize: 30,
-    }
+    },
 
 });
