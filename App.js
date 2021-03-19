@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import {StyleSheet, View,SafeAreaView,Text,Button} from 'react-native';
 import Estilos from './estilos/estilos';
 import CT from './componentes/caixaDeTexto';
+import Rolagem from './componentes/rolagem';
 
 
 export default function app1() {
@@ -15,7 +16,7 @@ export default function app1() {
         <SafeAreaView>
           <Text> Julio Rodrigues - Cursos</Text>
           <Text> Curso de React Native</Text>
-          <CT/>
+          <Rolagem/>
         </SafeAreaView>
 
 
