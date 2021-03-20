@@ -1,13 +1,28 @@
-//import React, { Component } from 'react';
-import React from 'react';
+import React, { Component } from 'react';
+//import React from 'react';
 import { StyleSheet, View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import Globais from './componentes/globais';
 
-const Gavetas = createDrawerNavigator()
+const Guias = createBottomTabNavigator()
 
+export default class  App1 extends Component{
 
+nome = Globais.nome;
 
+  render(){
+    return(
+      <View>
+        <Text>{this.nome}</Text>
+      </View>
+
+    )
+  }
+
+}
+
+/*
 function telaHome({ navigation }) {
 
   return (
@@ -51,8 +66,8 @@ export default function app1() {
 
   return (
     <NavigationContainer>
-      <Gavetas.Navigator initialRouteName={telaCanal}>
-        <Gavetas.Screen
+      <Guias.Navigator initialRouteName={telaCanal}>
+        <Guias.Screen
           name="Home"
           component={telaHome}
           options={{ 
@@ -75,7 +90,7 @@ export default function app1() {
           }}
         />
 
-        <Gavetas.Screen
+        <Guias.Screen
           name="Canal"
           component={telaCanal}
           options={{ 
@@ -93,13 +108,13 @@ export default function app1() {
           }}
         />
 
-        <Gavetas.Screen
+        <Guias.Screen
           name="Cursos"
           component={telaCursos}
           options={{ title: "Cursos do canal" }}
         />
 
-      </Gavetas.Navigator>
+      </Guias.Navigator>
     </NavigationContainer>
   );
 };
